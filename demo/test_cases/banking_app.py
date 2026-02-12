@@ -1,16 +1,21 @@
 """
 TEST CASE 1: Banking Application
 Vulnerabilities: SQL Injection, Hardcoded Credentials, Weak Authentication
+
+⚠️ WARNING: This file contains INTENTIONALLY VULNERABLE code for testing purposes.
+All credentials shown here are FAKE/EXAMPLE values for demonstration only.
+DO NOT use in production!
 """
 
 import sqlite3
 import hashlib
 
 # VULNERABILITY 1: Hardcoded database credentials
+# FAKE TEST DATA - Not real credentials
 DB_HOST = "production-db.bank.com"
-DB_PASSWORD = "P@ssw0rd123!"
+DB_PASSWORD = "P@ssw0rd123!"  # gitleaks:allow
 DB_USER = "admin"
-API_SECRET_KEY = "sk_live_51KZqYq2eZvKYlo2CTEST123456789"
+API_SECRET_KEY = "sk_test_FAKE_KEY_FOR_TESTING_ONLY"  # gitleaks:allow
 
 class BankingSystem:
     def __init__(self):

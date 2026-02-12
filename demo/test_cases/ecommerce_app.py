@@ -9,10 +9,11 @@ from flask import Flask, request, render_template_string
 app = Flask(__name__)
 
 # VULNERABILITY 1: Hardcoded secret keys
-SECRET_KEY = "my-super-secret-key-12345"
-STRIPE_API_KEY = "sk_live_51MqYq2eZvKYlo2C1234567890"
-AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+# FAKE TEST DATA - Not real credentials
+SECRET_KEY = "my-super-secret-key-12345"  # gitleaks:allow
+STRIPE_API_KEY = "sk_test_FAKE_STRIPE_KEY_FOR_DEMO"  # gitleaks:allow
+AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"  # gitleaks:allow
+AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"  # gitleaks:allow
 
 @app.route('/product/<product_id>')
 def show_product(product_id):
