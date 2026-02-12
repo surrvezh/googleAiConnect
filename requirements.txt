@@ -1,0 +1,25 @@
+# Core Agent Dependencies (simplified for compatibility)
+langgraph>=0.2.0
+langchain-google-vertexai>=2.0.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# Google Cloud
+google-cloud-aiplatform>=1.71.0
+google-cloud-bigquery>=3.25.0
+google-cloud-storage>=2.18.0
+
+# GitHub Integration
+PyGithub>=2.0.0
+
+# Code Analysis
+libcst>=1.4.0
+
+# Utilities
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+requests>=2.32.0
+pyyaml>=6.0.0
+
+# Testing
+pytest>=8.0.0
